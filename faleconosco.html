@@ -1,0 +1,526 @@
+<!doctype html> <!-- salvar como faleconosco.html-->
+<html lang="pt-br">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>PetDevelopers</title>
+		<link rel="stylesheet" href="styles.css" />
+	
+	<style>
+	
+	#mapa{
+	 
+		outline: 8px solid  #ffffff;
+		margin: 30px auto;
+		top: 220px;
+	}
+	
+	#textassunto{
+	position: absolute; 
+	left: 550px; 
+	top: 1400px;
+	}
+	
+			.search-assunto{		
+		position: absolute;
+		top: 268%;
+		left: 32%;
+		transform: translate(-20%,-80%);
+		background:#ffffff;
+		height: 200px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 800px;
+	}
+	
+			.assunto-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+	
+			#texttel{
+	position: absolute; 
+	left: 340px; 
+	top: 1180px;
+	}
+
+	
+		.search-tel{		
+		position: absolute;
+		top: 210%;
+		left: 18%;
+		transform: translate(-20%,-80%);
+		background:#ffffff;
+		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 400px;
+	}
+	
+			.tel-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+	
+	
+		#textemail{
+	position: absolute; 
+	left: 340px; 
+	top: 1290px;
+	}
+	
+		.search-email{		
+		position: absolute;
+		top: 227%;
+		left: 18%;
+		transform: translate(-20%,-80%);
+		background:#ffffff;
+		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 400px;
+	}
+	
+			.email-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+	
+	
+	#textcpf{
+	position: absolute; 
+	left: 950px; 
+	top: 1290px;
+	}
+	
+	.search-cpf{		
+		position: absolute;
+		top: 227%;
+		left: 62%;
+		transform: translate(-20%,-80%);
+		background:#ffffff;
+		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 400px;
+	}
+	
+			.cpf-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+	
+	#textnome{
+	position: absolute; 
+	left: 890px; 
+	top: 1180px;
+	
+	}
+	
+	.search-nome{		
+		position: absolute;
+		top: 210%;
+		left: 62%;
+		transform: translate(-20%,-80%);
+		background:#ffffff;
+		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 400px;
+	}
+
+			
+			.nome-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+	
+	#textfale{
+	position: absolute; 
+	left: 570px; 
+	top: 1070px;	
+	}
+	
+	#textE{
+	position: absolute; 
+	left: 680px; 
+	top: 1010px;	
+	}
+	
+	#textdados{
+	position: absolute; 
+	left: 550px; 
+	top: 950px;
+	}
+	
+
+
+	
+.catalogo{
+	margin:auto;
+	width:84%;
+	
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	padding:40px;
+	
+}
+
+	
+	
+		
+				body{
+		background-color: #000000
+		}
+		
+		
+		
+	.search-box{		
+		position: absolute;
+		width:750px;
+		margin-top:150px;
+		left: 50%;	
+		transform: translate(-20%,-80%);
+		background:#DAA520;
+		height: 40px;
+		border-radius: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+			
+			.search-btn{
+	color: white;
+	float: right;
+	width: 34px;
+	border-radius: 50%;
+	background: #DAA520;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+			}
+			
+			.search-txt{
+	width: 715px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+
+#texto:focus{
+	border: solid 1px #2f4550;
+	
+}
+
+	
+
+	
+
+nav{
+	border-top:4px solid orange;
+	border-bottom:4px solid orange;
+	height: 52px;
+	margin:auto;
+	margin-top:2px;
+	width:moz-available;
+	text-align:center;
+	padding-bottom:11px;
+	font-family:UI Semibold, Arial;
+	font-size:18px;
+	background-color: black;
+	color: gold;
+	
+}
+
+nav ul{
+	margin-top:1px;
+	position:relative;
+}
+
+nav ul li{
+	text-decoration:none;
+	list-style:none;
+	display: inline-block;
+	/* padding:20px; */
+	cursor:pointer;
+	min-width:110px;
+	margin-right:15px;
+}
+
+nav ul li:hover{
+	background-color:white;
+}	
+
+nav ul li a {
+	text-decoration:none;
+	color:gold;
+	display:block;
+	padding:20px;
+	
+	
+}
+nav ul li a:hover{
+	background-color:white;
+}
+
+nav ul ul {
+	position:absolute;
+	min-width:120px;
+	display:none;
+	padding-top:20px;
+}
+
+nav ul ul li{
+	display:block;
+	background-color:black;	
+	margin-left:-20px;	
+}
+
+nav ul ul li a{
+	color:gold;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+	
+header{
+	padding: 0px;
+	color: black;
+	background-image: URL("imagens/header1.png");
+	background-size: cover;
+	height: 250px;
+	width: 100%;
+	border-top:2px solid black;
+	display:flex;
+	justify-content:center;
+}
+
+.rodape{
+	position:absolute;
+	text-align:center;
+	top: 1800px;
+	border:3px solid orange;
+	text-align:center;
+	background-color:black;
+	color:#ffffff;
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+}
+
+.rodEnd{
+	margin-top:15px;
+}
+.rodEnd h3{
+	padding:10px;
+}
+
+.rodSocial{
+	margin-top:25px;
+	
+}
+.rodPag img{
+	padding-bottom:10px;
+}
+
+.rodSocial h3{
+	padding:10px;
+}
+
+.formasPagamento{
+	width:300px;
+	height:60px;
+}
+
+.imgSocial{
+	height:40px;
+	width:40px;
+}
+
+
+</style>
+
+</head>
+
+<body id="body">
+
+
+	<div id="divBusca" class="search-box">
+		<input class="search-txt" type="text" placeholder="Buscar..."/>
+			<img src="imagens/lupa.png"  width="30" height="30" id="btnBusca" alt="Buscar"/>
+			<i class="fas-fa-search"></i>
+	</div> 
+		
+			<section class="banner">
+				<div class="imagem" align="left">
+					<img src="imagens/header1.png"  height="300px" width="100%">
+				</div>
+			</section>
+			
+			
+<hr width="100%" style="border:0; box-shadow:5px 5px 10px #ffffff; background:#DAA520; padding:5px; margin:-4px;"/>
+<nav>
+				<ul> 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li style="padding:20px">Serviços
+						<ul>
+							<li><a href="banhotosa.html">Banho e Tosa</a></li>
+							<li><a href="hospedagem.html">Hospedagem</a></li>
+						</ul>
+					</li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="faleconosco.html" style="min-width: 112px;">Fale Conosco</a></li>
+					<li><a href="creditos.html">Créditos</a></li>
+					
+				</ul>
+			</nav>
+<hr width="100%" style="border:0; box-shadow:5px 5px 10px #ffffff; background:#DAA520; padding:5px; margin:-4px;"/>
+
+
+				
+		<iframe width="100%" id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.694947159738!2d-46.575463027140664!3d-23.535245215995296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!5e0!3m2!1spt-BR!2sbr!4v1621224502347!5m2!1spt-BR!2sbr" width="1335" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+				<div id="nome" class="search-nome">
+		<input class="nome-txt" type="text" placeholder="Digite aqui..."/>
+			<i class="fas-fa-nome"></i>
+	</div> 	
+
+	<div id="textnome">
+		<font color="#DAA520"><h4><b>NOME COMPLETO<b></h4></font>
+	</div>
+
+	<div id="cpf" class="search-cpf">
+		<input class="nome-txt" type="text" placeholder="Digite aqui..."/>
+			<i class="fas-fa-cpf"></i>
+	</div> 	
+
+	<div id="textcpf">
+		<font color="#DAA520"><h4><b>CPF<b></h4></font>
+	</div>
+
+	<div id="textdados">
+		<font color="#ffffff"><h1><b>Preencha seus Dados<b></h1></font>
+	</div>
+
+	<div id="textE">
+		<font color="#ffffff"><h1><b>E<b></h1></font>
+	</div>
+
+	<div id="textfale">
+		<font color="#ffffff"><h1><b>Fale com a Gente<b></h1></font>
+	</div>
+
+	<div id="email" class="search-email">
+		<input class="email-txt" type="text" placeholder="Digite aqui..."/>
+			<i class="fas-fa-email"></i>
+	</div> 	
+
+	<div id="textemail">
+		<font color="#DAA520"><h4><b>E-MAIL<b></h4></font>
+	</div>
+
+	<div id="tel" class="search-tel">
+		<input class="tel-txt" type="text" placeholder="Digite aqui..."/>
+			<i class="fas-fa-tel"></i>
+	</div> 	
+
+	<div id="texttel">
+		<font color="#DAA520"><h4><b>TELEFONE<b></h4></font>
+	</div>
+
+	<div id="textassunto">
+		<font color="#DAA520"><h3><b>ME FALA SOBRE O ASSUNTO<b></h3></font>
+	</div>
+
+	<div id="assunto" class="search-assunto">
+		<input class="assunto-txt" type="text" placeholder="Digite aqui..."/>
+			<i class="fas-fa-assunto"></i>
+	</div> 
+
+		<script>window.rwbp={email: 'dahlkeluan22@gmail.com',phone: '+5511954224586',message: 'Olá, me conta quem é você para iniciarmos nossa conversa!'}</script><script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+				
+				
+					<footer class="rodape">
+					<div class="rodEnd">
+						<h3>Endereço</h3>
+						<p>Comercio Nacional - CNPJ 00.000.111/0008*00</p>
+						<br>
+						<p>R. Texteis,2785 Tatuapé, São Paulo - SP, 03308-010</p>
+					</div>
+					<div class="rodPag">
+						<h3>Formas de Pagamento</h3>
+						<br>
+						<img class="formasPagamento" src="imagens/formasdepagamento.png">
+					</div>
+					<div class="rodSocial">
+						<h3>Redes Sociais</h3>
+						<div class="img">
+							<img class="imgSocial" src="imagens/facebook.png">
+							<img class="imgSocial" src="imagens/instagram.png">
+							<img class="imgSocial" src="imagens/twiter.png">
+						</div>
+					</div>
+				
+				</footer>	
+				
+	
+
+</body>
+
+</html>

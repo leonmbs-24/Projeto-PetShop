@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>PetDevelopers</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="carousel.css" />
+	
+	<style>
+		
+	#linha{
+	position: absolute; 
+	left: 5px; 
+	top: 2000px;
+	}
+	
+
+		
+	#imgface{
+	position: absolute; 
+	left: 1110px; 
+	top: 2100px;
+	}
+	
+	#imginsta{
+	position: absolute; 
+	left: 1170px; 
+	top: 2100px;
+	}
+		
+	#imgtwitter{
+	position: absolute; 
+	left: 1230px; 
+	top: 2100px;	
+	}
+	
+	#textoredes{
+	position: absolute; 
+	left: 1120px; 
+	top: 2030px;
+	}
+	
+	#textoend{
+	position: absolute; 
+	left: 40px; 
+	top: 2050px;
+	}
+	
+	#imgpagamento{
+	position: absolute; 
+	left: 560px; 
+	top: 2100px;
+	}
+	
+	#textopag{
+	position: absolute; 
+	left: 580px; 
+	top: 2030px;
+	}
+
+	
+.catalogo{
+	margin:auto;
+	width:84%;
+	
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	padding:40px;
+	
+}
+
+.produto{
+	padding:10px;
+	margin-bottom:50px;
+	border:1px solid gold;
+	cursor:pointer;
+	
+}
+
+.produto p{
+	color: #ffffff;
+	background-color:black;
+	padding:5px 10px;
+	
+}
+
+.produto h3{
+	color:black;
+	background-color:gold;
+	
+}
+
+	{ margin: 0;padding: 0; }
+		
+	.galery{
+	    width: 1300px;
+		height: 500;
+		outline: 8px solid  #ffffff;
+		overflow: hidden;
+		margin: 80px auto;
+		border-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+	}
+	
+	
+	
+	
+	
+	.galery .fotos img {
+		width: 20%;
+	}
+
+
+	
+	
+		
+				body{
+		background-color: #000000;
+		}
+		
+	.search-box{		
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-20%,-80%);
+		background:#DAA520;
+		height: 40px;
+		border-radius: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+			
+			.search-btn{
+	color: white;
+	float: right;
+	width: 50px;
+	border-radius: 50%;
+	background: #DAA520;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+			}
+			
+			.search-txt{
+	width: 550px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+
+	
+
+	
+
+nav{
+				border-top:4px solid orange;
+				border-bottom:4px solid orange;
+				height: 52px;
+				margin:auto;
+				margin-top:2px;
+				width:moz-available;
+				text-align:center;
+				padding-bottom:11px;
+				font-family:UI Semibold, Arial;
+				font-size:18px;
+				background-color: black;
+				color: gold;
+				
+			}
+
+			nav ul{
+				margin-top:1px;
+				position:relative;
+			}
+
+			nav ul li{
+				text-decoration:none;
+				list-style:none;
+				display: inline-block;
+				/* padding:20px; */
+				cursor:pointer;
+				min-width:110px;
+				margin-right:15px;
+			}
+
+			nav ul li:hover{
+				background-color:white;
+			}	
+
+			nav ul li a {
+				text-decoration:none;
+				color:gold;
+				display:block;
+				padding:20px;
+				
+				
+			}
+			nav ul li a:hover{
+				background-color:white;
+			}
+
+			nav ul ul {
+				position:absolute;
+				min-width:120px;
+				display:none;
+				padding-top:20px;
+			}
+
+			nav ul ul li{
+				display:block;
+				background-color:black;	
+				margin-left:-20px;	
+			}
+
+			nav ul ul li a{
+				color:gold;
+			}
+
+			nav ul li:hover ul{
+				display:block;
+			}
+
+
+	</style>
+		
+
+	</head>
+
+	
+	<body id="body">
+
+
+	<div id="divBusca" class="search-box">
+		<input class="search-txt" type="text" placeholder="Buscar..."/>
+			<img src="imagens/lupa.png"  width="30" height="30" id="btnBusca" alt="Buscar"/>
+			<i class="fas-fa-search"></i>
+	</div> 
+		
+		<div id="cabecalho" align="left">
+	<div align="left">
+		<img src="imagens/header1.png" height="300px" width="100%"/> 
+	</div>
+	</div>	
+<nav>
+			<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="produtos.html">Produtos</a></li>
+				<li style="padding:20px">Serviços
+					<ul>
+						<li><a href="banhotosa.html">Banho e Tosa</a></li>
+						<li><a href="hospedagem.html">Hospedagem</a></li>
+					</ul>
+				</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="faleconosco.html" style="min-width: 112px;">Fale Conosco</a></li>
+				<li><a href="creditos.html">Créditos</a></li>
+				
+			</ul>
+		</nav>	
+
+<main class="main">
+
+    <section class="catalogo">
+            <section class="produto">
+                <img src="imagens/img1.jpg" width="300" height="200"> 
+                <p>Já deixou de fazer aquela viagem por não ter alguém para cuidar do seu pet? O medo de deixar ele com alguém que não saiba cuidar (igual você)? Trazemos ótimas notícias, Aqui a nossa hospedagem, é especialmente para quem quer deixar o pet em um lugar seguro, sem perder o clima caseiro.</p>
+            </section>
+            
+            <section class="produto"> 
+                <img src="imagens/img2.jpg" width="200" height="200">
+                <p>Nosso intuito é encaminhar o pet para um especialista (amigo), que, enquanto o pet não estiver em seu lar, ele não perderá a sua rotina de cuidados, e nem o seu conforto. Temos o propósito de deixá-lo em um lar enquanto o seu dono não estiver presente. Fazendo tudo aquilo que ele faz em seu dia-a-dia! E quando sentir saudades de seu dono, o "amigo" que estiver responsável por ele, faz ligação por vídeo para matar a saudade, e o seu dono ver como está sendo os cuidados dele.</p>
+            </section>	
+
+			<section class="catalogo">
+				<section class="produto"> 
+					<h3>Inclusões</h3>
+					<p>Para garantir a segurança e conforto de nossa hospedagem, incluímos banho, passeios e brinquedos para o pet. O único trabalho do cliente será levar o pet até o amigo.</p>
+				</section>
+				
+				<section class="produto">
+					<h3>Como funciona?</h3> 
+					<p>Ao entrar em contato conosco e nos informar como é o tratamento do pet, iremos localizar o amigo mais próximo e ideal para você. Sempre que sentir saudades do seu pet, o amigo que ficará responsável por ele pode te mandar fotos, vídeos e até mesmo fazer chamada de vídeo.</p>
+				</section>	
+				
+				<section class="produto">
+					<h3>Como agendar?</h3>
+					<p>Para agendar e ter certeza que o dia desejado está disponível, entre em contato conosco através das nossas plataformas digitais, com antecedência. O pagamento é realizado pelo site ou pelo app, com cartão de crédito, débito, boleto ou transferência bancária.</p>
+				</section>
+
+            <hr id="linha" width="1335" style="border:0; box-shadow:5px 5px 10px #ffffff; background:#DAA520; padding:5px; margin:-4px;"/>
+            <div id="textoredes">
+            <b><font color="#ffffff"><h1>Redes Sociais</h1><b></font>
+            </div>
+            <div id="textoend">
+            <font color="#ffffff"><h4>Comercio Nacional - CNPJ 00.000.111/0008-00 
+            <p>R. texteis, 2785  - Tatuapé, São Paulo - SP, 03308-010</p></h4></font>
+            </div>
+            <div id="textopag">
+            <font color="#ffffff"><h1><b>Formas de Pagamento<b></h1></font>
+            </div>
+            <img src="imagens/facebook.png" width="40"	height="40" id="imgface"> 
+            <img src="imagens/instagram.png" width="40"	height="40" id="imginsta">
+            <img src="imagens/twiter.png" width="40"	height="40" id="imgtwitter">
+            <img src="imagens/formasdepagamento.png" width="300"	height="60" id="imgpagamento">
+        
+        
+        </body>
+      
+      
+    </html>

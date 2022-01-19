@@ -1,0 +1,402 @@
+<!doctype html> <!-- salvar como Indexhome.html-->
+<html lang="pt-br">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>PetDevelopers</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="carousel.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		
+					body{
+		background-color: #000000;
+		}
+		
+.rodape{
+	text-align:center;
+	border:3px solid orange;
+	background-color:black;
+	color:#ffffff;
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+.rodEnd{
+	margin-top:15px;
+}
+.rodEnd h3{
+	padding:10px;
+}
+
+.rodSocial{
+	margin-top:25px;
+	
+}
+.rodPag img{
+	padding-bottom:10px;
+}
+
+.rodSocial h3{
+	padding:10px;
+}
+
+.formasPagamento{
+	width:300px;
+	height:60px;
+}
+
+.imgSocial{
+	height:40px;
+	width:40px;
+}
+
+
+	
+.catalogo{
+	margin:auto;
+	width:84%;
+	
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	padding:40px;
+	
+}
+
+.produto{
+	padding:10px;
+	margin-bottom:50px;
+	border:1px solid gold;
+	cursor:pointer;
+	
+}
+
+.produto:hover{
+	transform:rotate(-5deg);
+
+}
+
+.produto p{
+	color: #ffffff;
+	background-color:black;
+	padding:5px 10px;
+	
+}
+
+.produto h3{
+	color:black;
+	background-color:gold;
+	}
+	
+	
+	.galery{
+	    width: 100%;
+		height: 500;
+		outline: 5px solid  #ffffff;
+		overflow: hidden;
+		margin: 80px auto;
+		border: 10px 10px 15px rgba(0,0,0,0.7);
+	}
+	
+	.galery .fotos{
+		width: 460%;
+		animation-name: animacao;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+	}
+	
+	
+	
+	
+	.galery .fotos img {
+		width: 20%;
+	}
+
+@keyframes animacao {
+		0%{margin-left: 0;}
+		20%{margin-left:0;}
+		25%{margin-left: -100%;}
+		45%{margin-left: -100%;}
+		50%{margin-left: -200%;}
+		70%{margin-left: -200%;}
+		75%{margin-left: -300%;}
+		95%{margin-left: -300%;}
+		100%{margin-left: -400%;}
+	}
+
+	
+	
+		
+
+		
+	.search-box{		
+		position: absolute;
+		width:750px;
+		margin-top:150px;
+		left: 50%;	
+		transform: translate(-20%,-80%);
+		background:#DAA520;
+		height: 40px;
+		border-radius: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+			
+			.search-btn{
+	color: white;
+	float: right;
+	width: 34px;
+	border-radius: 50%;
+	background: #DAA520;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+			}
+			
+			.search-txt{
+	width: 715px;
+	border-radius: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	transition:0.5s;
+	line-height: 40px;
+	border-color: rgba(0,0,0,0);
+			}
+
+#texto:focus{
+	border: solid 1px #2f4550;
+	
+}
+
+	
+
+	
+
+nav{
+	border-top:4px solid orange;
+	border-bottom:4px solid orange;
+	height: 52px;
+	margin:auto;
+	margin-top:2px;
+	width:moz-available;
+	text-align:center;
+	padding-bottom:11px;
+	font-family:UI Semibold, Arial;
+	font-size:18px;
+	background-color: black;
+	color: gold;
+	
+}
+
+nav ul{
+	margin-top:1px;
+	position:relative;
+}
+
+nav ul li{
+	text-decoration:none;
+	list-style:none;
+	display: inline-block;
+	/* padding:20px; */
+	cursor:pointer;
+	min-width:110px;
+	margin-right:15px;
+}
+
+nav ul li:hover{
+	background-color:white;
+}	
+
+nav ul li a {
+	text-decoration:none;
+	color:gold;
+	display:block;
+	padding:20px;
+	
+	
+}
+nav ul li a:hover{
+	background-color:white;
+}
+
+nav ul ul {
+	position:absolute;
+	min-width:120px;
+	display:none;
+	padding-top:20px;
+}
+
+nav ul ul li{
+	display:block;
+	background-color:black;	
+	margin-left:-20px;	
+}
+
+nav ul ul li a{
+	color:gold;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+	
+header
+{
+	padding: 0px;
+	color: black;
+	background-image: URL("imagens/header1.png");
+	background-size: cover;
+	height: 250px;
+	width: 100%;
+	border-top:2px solid black;
+	display:flex;
+	justify-content:center;
+}
+
+	</style>
+		
+
+</head>
+
+	
+	<body id="body">
+
+
+	<div id="divBusca" class="search-box">
+		<input class="search-txt" type="text" placeholder="Buscar..."/>
+			<img src="imagens/lupa.png"  width="30" height="30" id="btnBusca" alt="Buscar"/>
+			<i class="fas-fa-search"></i>
+	</div> 
+		
+			<section class="banner">
+				<div class="imagem" align="let">
+					<img src="imagens/header1.png" height="300px" width="100%">
+				</div>
+			</section>
+			
+<hr width="100%" style="border:0; box-shadow:5px 5px 10px #ffffff; background:#DAA520; padding:5px; margin:-4px;"/>
+<nav>
+				<ul> 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li style="padding:20px">Serviços
+						<ul>
+							<li><a href="banhotosa.html">Banho e Tosa</a></li>
+							<li><a href="hospedagem.html">Hospedagem</a></li>
+						</ul>
+					</li>					
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="faleconosco.html" style="min-width: 112px;">Fale Conosco</a></li>
+					<li><a href="creditos.html">Créditos</a></li>
+					
+				</ul>
+			</nav>
+<hr width="100%" style="border:0; box-shadow:5px 5px 10px #ffffff; background:#DAA520; padding:5px; margin:-4px;"/>
+
+		<main class="main">
+		
+		<section class="galery">
+			<div class="fotos">
+				<img src="imagens//carrossel1.png.png" alt="foto 1">
+				<img src="imagens/carrossel2.png" alt="foto 2">
+				<img src="imagens/carrossel3.png" alt="foto 3">
+				<img src="imagens/carrossel1.png" alt="foto 1">
+			</div>
+		</section>
+	</main>
+
+		<section class="catalogo">
+				<section class="produto">
+					<img src="imagens/caixadetransportedogato.png" width="180" height="150" alt="caixa"> 
+					<h3>Caixa Transporte</h3>
+					<p>Uber para seu Pet</p>
+					<p>PROMOÇÂO <font color="gold">R$50.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&starf;</p>
+				</section>
+				
+				<section class="produto">
+					<img src="imagens/poteracao.png" width="180" height="150" alt="pote">
+					<h3>Comedouro</h3> 
+					<p>para seu pet comer melhor</p>
+					<p>PROMOÇÂO <font color="gold">R$20.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&star;</p>
+				</section>	
+				
+				<section class="produto">
+					<img src="imagens/camapet.png" width="180" height="150" alt="cama">
+					<h3>Cama confort</h3>
+					<p>Bons sonhos para seu pet</p>
+					<p>PROMOÇÂO <font color="gold">R$80.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&starf;</p>
+				</section>
+				
+				<section class="produto">
+					<img src="imagens/casapet.png" width="180" height="150" alt="Casa">
+					<h3>Casinha</h3>
+					<p>casa para seu pet</p>
+					<p>PROMOÇÂO <font color="gold">R$99.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&starf;</p>
+				</section>
+				
+				<section class="produto">
+					<img src="imagens/fucileirapet.png" width="180" height="150" alt="Pato" class="item">
+					<h3>Focinheira Canina</h3>
+					<p>Cuide da saúde de seu Pet</p>
+					<p>PROMOÇÂO <font color="gold">R$19.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&star;</p></p>
+				</section>		
+				
+				<section class="produto">
+					<img src="imagens/banhotosapet.png" width="180" height="150" alt="Pato" class="item">
+					<h3>Banho e Tosa</h3>
+					<p>Aproveite a Super</p>
+					<p>PROMOÇÂO por apenas</p>
+					<p><font color="gold">R$70.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&star;</p></p>
+				</section>	
+				
+				<section class="produto">
+					<img src="imagens/hospedagempet.png" width="180" height="150" alt="Pato" class="item">
+					<h3>Hospedagem Pet</h3>
+					<p>Encontre a babá</p>
+					<p>para seu Pet</p>
+					<p>PROMOÇÂO por apenas</p>
+					<p><font color="gold">R$90.00</font></p>
+					<p>&starf;&starf;&starf;&starf;&star;</p></p>
+				</section>	
+		</section>
+				<footer class="rodape">
+					<div class="rodEnd">
+						<h3>Endereço</h3>
+						<p>Comercio Nacional - CNPJ 00.000.111/0008*00</p>
+						<br>
+						<p>R. Texteis,2785 Tatuapé, São Paulo - SP, 03308-010</p>
+					</div>
+					<div class="rodPag">
+						<h3>Formas de Pagamento</h3>
+						<br>
+						<img class="formasPagamento" src="imagens/formasdepagamento.png">
+					</div>
+					<div class="rodSocial">
+						<h3>Redes Sociais</h3>
+						<div class="img">
+							<img class="imgSocial" src="imagens/facebook.png">
+							<img class="imgSocial" src="imagens/instagram.png">
+							<img class="imgSocial" src="imagens/twiter.png">
+						</div>
+					</div>
+				
+				</footer>
+	</body>
+  
+  
+</html>

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<title>blog</title>
+
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.imagem {
+			padding: 10px 70px 50px 70px;
+			display: inline;
+			float: left;
+			max-width: 100%;
+		}
+
+		.titulo {
+			font-size: 30px;
+			padding: 20px 50px 20px 70px;
+			color: darkgoldenrod;
+			text-align: center;
+			background-color: black;
+		}
+
+		.conteudo {
+			padding: 0px 40px 30px 50px;
+			font-size: 13px;
+			line-height: 2.0;
+			text-align: justify;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 14px;
+			background-color: black;
+			background-repeat: no-repeat;
+			color: goldenrod;
+
+		}
+
+		#h1 {
+			color: goldenrod;
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: black;
+
+		}
+
+
+		.princ {
+			width: 100%;
+			margin: auto;
+			margin-top: 0px;
+			max-width: 1000px;
+
+
+		}
+
+				
+		.rodape{
+			text-align:center;
+			border:3px solid orange;
+			background-color:black;
+			color:gold;
+			display:flex;
+			justify-content:space-around;
+			
+		}
+
+		.rodEnd{
+			margin-top:15px;
+		}
+		.rodEnd h3{
+			padding:10px;
+		}
+
+		.rodSocial{
+			margin-top:25px;
+			
+		}
+		.rodPag img{
+			padding-bottom:10px;
+		}
+
+		.rodSocial h3{
+			padding:10px;
+		}
+
+		.formasPagamento{
+			width:300px;
+			height:60px;
+		}
+
+		.imgSocial{
+			height:40px;
+			width:40px;
+		}
+
+		body {
+			background-color: black;
+			width: 100%;
+		}
+
+		header{
+			padding: 0px;
+			color: black;
+			background-image: URL("./imagens/header1.png");
+			background-size: cover;
+			height: 250px;
+			width: 100%;
+			border-top:2px solid black;
+			display:flex;
+			justify-content:center;
+		}
+
+		.pesquisa {
+			width: 750px;
+			margin-top: 150px;
+			left: 50%;
+			transform: translate(-20%, -80%);
+			background: #DAA520;
+			height: 40px;
+			border-radius: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-left: 35%;
+
+		}
+
+		#texto {
+			width: 700px;
+			border-radius: none;
+			background: #DAA520;
+			outline: none;
+			color: black;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			transition: 0.5s;
+			line-height: 40px;
+			border-color: rgba(0, 0, 0, 0);
+			border-radius: 50px;
+		}
+
+		.btn {
+			color: white;
+			float: right;
+			width: 38px;
+			border-radius: 50%;
+			background: #DAA520;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#texto:focus {
+			border: solid 1px #2f4550;
+
+		}
+
+
+		nav {
+			border-top: 4px solid orange;
+			border-bottom: 4px solid orange;
+			height: 52px;
+			margin: auto;
+			margin-top: 2px;
+			width: moz-available;
+			text-align: center;
+			padding-bottom: 11px;
+			font-family: UI Semibold, Arial;
+			font-size: 18px;
+			background-color: black;
+			color: gold;
+
+		}
+
+		nav ul {
+			margin-top: 1px;
+			position: relative;
+		}
+
+		nav ul li {
+			text-decoration: none;
+			list-style: none;
+			display: inline-block;
+			/* padding:20px; */
+			cursor: pointer;
+			min-width: 110px;
+			margin-right: 15px;
+		}
+
+		nav ul li:hover {
+			background-color: white;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: gold;
+			display: block;
+			padding: 20px;
+
+
+		}
+
+		nav ul li a:hover {
+			background-color: white;
+		}
+
+		nav ul ul {
+			position: absolute;
+			min-width: 120px;
+			display: none;
+			padding-top: 20px;
+		}
+
+		nav ul ul li {
+			display: block;
+			background-color: black;
+			margin-left: -20px;
+		}
+
+		nav ul ul li a {
+			color: gold;
+		}
+
+		nav ul li:hover ul {
+			display: block;
+		}
+	</style>
+</head>
+
+<body id="body">
+
+	<header>
+
+		<form class="pesquisa">
+			<input type="search" id="texto" placeholder="Pesquisar" style="border: none;">
+			<img src="imagens/lupa.png" class="btn">
+		</form>
+
+	</header>
+	
+	<nav>
+		<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li><a href="produtos.html">Produtos</a></li>
+			<li style="padding:20px">Serviços
+				<ul>
+					<li><a href="banhotosa.html">Banho e Tosa</a></li>
+					<li><a href="hospedagem.html">Hospedagem</a></li>
+				</ul>
+			</li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="faleconosco.html" style="min-width: 112px;">Fale Conosco</a></li>
+			<li><a href="creditos.html">Créditos</a></li>
+			
+		</ul>
+	</nav>	
+
+	<div style="background-color:goldenrod;">
+		<h1 class="titulo">
+			Seja muito bem-vindo a PetDevelopers, é um prazer te receber.
+		</h1>
+	</div>
+
+	<div class="princ">
+
+		<h1 id="h1" align="center">
+			Blog
+		</h1>
+
+		<p class="conteudo">Nós da <b>PetDevelopers</b> criamos esse Blog com o intuito de tirar todas as suas duvidar e
+			ajudar você a entender melhor a importancia que se deve dar para o cuidado e bem estar do seu Pet no seu
+			dia-a-dia.</p>
+		<img class="imagem" src="imagens/banho.jpg" width="360" height="280">
+
+		<h1 id="h1">Com que frequência voçê deve dar banho no seu cãozinho?</h1>
+
+		<p class="conteudo">
+			É possível dar banho no seu cãozinho a cada quinze dias ou sempre que ele estiver sujo não existe
+			especificamente uma ordem para se dar banho. A frequência pode aumentar caso ele fique muito tempo no
+			quintal da casa e acabe se sujando mais que o comum no dia-a-dia.
+			Manter o seu dog bem-higienizado é sempre bom para o bem-estar dele, por isso os banhos regulares são sempre
+			essenciais até mesmo para você não ficar com a casa suja por conta do seu bichinho de estimação andando pra
+			lá e pra cá .
+		</p>
+		<p class="conteudo">
+			Não existe uma frequência certa para os banhos deve-se ter uma conversa com o veterinários e os assistentes
+			que cuidam do banhos dos pet, tudo depende da raça, da pelagem, se tem alergias, da própria rotina do pet.
+			Porem deve se lembrar também que os cuidados com a pelagem são muito importantes, não só por estética, mas
+			para a saúde do pet também. Então sempre que for dar banho não se pode esquecer de escovar os pelo e
+			analisar se tem algum carapato ou feridas por de baixo do pelo.
+			Nós podem doer e levar a infecções de pele e até atrapalhar no dia-a-dia do pet então tenha sempre atenção .
+		</p>
+
+		<p class="conteudo">
+			Geralmente o banhos toda semana retira a oleosidade produzida pela pele, podendo acarretar em coceira,
+			descamação da pele e a alergias.
+			Para um cachorro bem cuidado e que não tem costume de ficar muito sujo, acreditasse que apenas um banho ao
+			mês seja mais que o necessário.
+			Porém tudo depende das circuntancias como ja foi dito acima.
+		</p>
+
+		<img class="imagem" src="imagens/adestramento.jpg" width="360" height="280">
+		<h1 id="h1">Porque devemos adestrar nossos cães? </h1>
+		<p class="conteudo">
+			Perguntar engraçada não pois muitas pessoas acreditam que quando se compra um cachorro ela só vai ter o
+			trabalho de cuidar, alimentar e limpar a bagunça do seu pet,
+			mas ao contrário do que todo mundo pensa de ter um cachorro vai muito além de apenas isso.
+		</p>
+
+		<p class="conteudo">
+			Vamos a ponto que nos interessa que é sobre o adestramento por que devemos levar o pet para adestrar, e te
+			contamos o porquê seu pet pode ter diversas dificuldades que você muitas vezes nem imagina, a mais comum que
+			as pessoas contratam os adestradores e porquê o pet é agressivo e isso pode ser só a ponta do iceberg,
+			seu dog e muito agressivo por que já é da natureza da sua raça ou ele foi adotado e era judiado por seu
+			antigo dono outros pontos que muitas vezes não conhecemos são as fobias por sons que fazem eles ficarem
+			atordoados.
+			Muitas vezes já vimos quando ouvimos um barulho bem alto como podem incomodar nossos cães, como o barulho de
+			trovão, fogos de artifícios e buzinas e campainhas.
+		</p>
+
+
+		<p class="conteudo">
+			E aqui vai uma novidade que poucos devem saber, enquanto para nós humanos, conseguimos ouvir sons com
+			frequência entre 16Hz e 20.000 Hz, o ouvido dos cães muito mais sensível que o nosso e escuta sons entre
+			10Hz e 40.000 Hz.
+			Portanto procure um adestrador profissional para ajudá-lo a se acostumar mais.
+			E pôr fim às vezes seu cachorro pode naturalmente ser bonzinho e somente precisa ser adestrado para ser mais
+			educado e obedecer suas ordens de forma mais natural.
+		</p>
+
+		<img class="imagem" src="imagens/filhotes.jpg" width="360" height="280">
+		<h1 id="h1">Como cuidar dos seu filhotes de gatos da maneira certa!</h1>
+		<p class="conteudo">
+			A chegada de uma ninhada gatinho deve exigir cuidados extras com a saúde e também com a sua casa para que a
+			adaptação ocorra sem muito estresse.
+			A fase mais bela de todos dos animais é quando eles são pequenos!
+			É por isso que filhotes de gato chamam atenção pois são muito fofos e seus futuros donos, que não resistem
+			aos encantos e acabam levando-os para casa!
+			A adaptação dos filhotes ao novo ambiente e a sua adaptação em relação às necessidades dos seus felinos pode
+			demorar demais, gerando um estresse na rotina da família.
+			O lado bom é que, com o tempo, os donos ganham certa experiência para cuidar cada vez melhor de seus pets.
+
+		</p>
+		<p class="conteudo">
+			Quando os gatos são filhotes, é preciso redobrar os cuidados para que eles se tornem adultos saudáveis.
+			Confira pequenas dicas para saber tudo sobre como cuidar filhotes.
+		</p>
+
+		<UL class="conteudo">
+			<LI>
+				<b>Até os 45 dias de vida.</b> <br>
+				Os gatinhos não devem ser separados de suas mães até completarem 45 dias de vida, não importa o quanto
+				os donos desejem levá-los para casa a não ser que leve a mãe junto ou ela também já faça parte da
+				família,
+				e muito importante que dentro desses 45 eles se alimente especificamente do leite materno para ficar
+				mais forte rápido.
+			</LI>
+			<LI>
+				<b>Cuidados com o ambiente.</b><br>
+				Nas três primeiras semanas de vida, o gato filhote é muito frágil e nem consegue regular a temperatura
+				corporal sozinho.
+				Geralmente a mãe se encarrega de mantê-los aquecidos, então prepare uma área especial para a mãe e os
+				filhotes, de preferência confortável, quente e reservado.
+				Forre o local com um colchonete, almofadas e mantas grossas. Não se esqueça de sempre manter tudo limpo
+				para manter a saúde dos bebês.
+			</LI>
+			<LI>
+				<b>Brincadeiras.</b><br>
+				Quando filhotes, os gatos têm muita energia e lidar com ela pode ser um desafio para tutores de primeira
+				viagem. Prepare-se para brincar bastante e tenha acessórios para ajudar a “cansar” o seu pet.
+				Arranhadores são um bom brinquedo para que os gatos gastem as unhas e deixem seu instinto aflorar. A
+				vontade de colocar as garras p6ara fora é normal em felinos e pode ser feita de forma saudável e
+				inofensiva desde cedo com a ajuda desses acessórios.
+				Tome cuidado ao comprar brinquedos para os filhotes! Veja se não há nenhuma parte solta que possa ser
+				engolida ou partes que possam machucá-los, já que eles ainda são pequenos e frágeis.
+			</LI>
+		</UL>
+
+	</div>
+	<br />
+
+	<footer class="rodape">
+			<div class="rodEnd">
+				<h3>Endereço</h3>
+				<p>Comercio Nacional - CNPJ 00.000.111/0008*00</p>
+				<br>
+				<p>R. Texteis,2785 Tatuapé, São Paulo - SP, 03308-010</p>
+			</div>
+			<div class="rodPag">
+				<h3>Formas de Pagamento</h3>
+				<br>
+				<img class="formasPagamento" src="imagens/formasdepagamento.png">
+			</div>
+			<div class="rodSocial">
+				<h3>Redes Sociais</h3>
+				<div class="img">
+					<img class="imgSocial" src="imagens/facebook.png">
+					<img class="imgSocial" src="imagens/instagram.png">
+					<img class="imgSocial" src="imagens/twiter.png">
+				</div>
+			</div>
+		
+		</footer>
+
+</body>
+
+
+</html>
